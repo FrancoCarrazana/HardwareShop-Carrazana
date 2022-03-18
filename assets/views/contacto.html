@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut" href="../assets/image/icon/favicon-16x16.png">
+  <link rel="stylesheet" href="../../style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style/bootstrap.min.css">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../image/icon/favicon.ico" alt="HardwareShop" width="100"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <fieldset class="formulario">
+      <legend>Formulario</legend>
+      <form>
+        <div>
+          <label for="Nombre">Completa tu nombre</label>
+          <input type="text" name="nombre" placeholder="ej. Martin">
+        </div> <br>
+        <div>
+          <label for="Apellido">Completa tu apellido</label>
+          <input type="text" name="apellido" placeholder="ej. Sanchez">
+        </div> <br>
+        <div>
+          <label for="Email">Completa tu Email</label>
+          <input type="email" name="Email" placeholder="estoesunejempli@ejemplo.com" required>
+        </div> <br>
+        <div>
+          <label for="comentario">Motivo de contacto</label><br>
+          <textarea name="comentario" id="" cols="50" rows="5"></textarea>
+          <div>
+            <input class="input-button" type="submit" value="Enviar" />
+          </div> <br>
+          <div>
+            <input class="input-button" type="reset" value="Borrar" />
+          </div>
+      </form>
+    </fieldset>
+  </main>
+  <footer>
+
+    <hr>
+
+    <h4> <a href="./contacto.html">Contacto</a></h4>
+
+    <h4>Copyright &copy; todos los derechos reservados HardwareShop</h4>
+  </footer>
+</body>
+
+</html>

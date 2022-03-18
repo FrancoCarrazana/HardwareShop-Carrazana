@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+th {
+  font-family: "Bebas Neue", sans-serif;
+  color: grey;
+}
+td {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+}
+table {
+  background-color: black;
+  width: 50%;
+  height: 30%;
+  /* background-image: url("../assets/image/divs.jpg"); */
+}
+header {
+  background-color: #a72424e1;
+  font-family: "Abril Fatface", cursive;
+  background: linear-gradient(
+    to top,
+    rgb(36, 36, 36),
+    rgb(41, 40, 41),
+    rgba(46, 46, 46, 0.925),
+    rgb(58, 57, 57),
+    rgba(68, 68, 68, 0.925)
+  );
+  height: 20%;
+  grid-area: header;
+}
+body {
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    rgb(36, 36, 36),
+    rgb(41, 40, 41),
+    rgba(46, 46, 46, 0.925),
+    rgb(58, 57, 57),
+    rgba(68, 68, 68, 0.925)
+  );
+  grid-area: body;
+}
+footer {
+  position: end;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  background: #999;
+  /* background-image: url("../assets/image/fondo.jpg"); */
+}
+li {
+  list-style-type: none;
+  padding: 5%;
+  margin: 0%;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  color: rgba(148, 141, 50, 0.658);
+}
+
+p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  padding: 3px;
+  color: rgba(148, 141, 50, 0.658);
+  margin: auto;
+}
+h1 {
+  font-family: "Abril Fatface", cursive;
+  color: #221e47;
+  line-height: 1.5em;
+  text-align: center;
+  word-spacing: 5px;
+}
+h2 {
+  font-family: "Abril Fatface", cursive;
+  color: #2e3c8d;
+  line-height: 1.5em;
+  padding: 3px;
+}
+h3 {
+  font-family: "Abril Fatface", cursive;
+  color: #221e47;
+  line-height: 1.5em;
+  padding: 10px;
+  margin: 20px;
+}
+h4 {
+  font-family: "Abril Fatface", cursive;
+  color: #28a1a1;
+  line-height: 1.5em;
+  padding: 5px;
+}
+h5 {
+  font-family: "Abril Fatface", cursive;
+  color: #221e47;
+  line-height: 1.5em;
+  padding: 100%;
+  margin: 100%;
+}
+main {
+  width: 100%;
+  margin: 20px auto;
+  padding: auto;
+  height: 80vh;
+  border: solid black 3px;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+.pie {
+  text-align: center;
+}
+.sector {
+  border: 5px outset rgb(209, 69, 26);
+  padding: 90px;
+  height: 450px;
+  width: 350px;
+  background: radial-gradient(
+    circle,
+    rgb(253, 254, 255),
+    rgb(132, 132, 133),
+    rgba(2, 2, 2, 0.925)
+  );
+  overflow: visible;
+  display: grid;
+  align-self: center;
+  transition: all 1.8s ease;
+}
+.sector:hover {
+  background-color: blueviolet;
+  transform: translate(10px, 14px);
+  /* width: 250px;
+    height: 250px; */
+  border-radius: 3%;
+  border: 3px outset #ff0404;
+}
+.sectorCarrucel {
+  border: 1px solid black;
+  padding: 90px;
+  height: 600px;
+  width: 100%;
+  margin: auto;
+  display: flexbox;
+}
+div {
+  text-align: center;
+}
+/* nav ul {
+  list-style: none;
+  background-color: #444744;
+  display: flex;
+  justify-content: center;
+}
+nav ul a {
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem;
+  display: block;
+  transition: all 1.5s ease;
+}
+nav ul a:hover {
+  background-color: rgba(5, 3, 0, 0.726);
+  color: rgb(243, 207, 6);
+  font-weight: bold;
+  transform: translate(2px, 4px);
+}
+nav {
+  font-family: "Abril Fatface", cursive;
+  list-style-type: none;
+  display: inline-block;
+  padding: 1;
+  margin: 3;
+}
+nav li {
+  font-family: "Abril Fatface", cursive;
+  text-align: center;
+  display: inline-block;
+  padding: 1;
+  margin: 3;
+  background-color: #4e4a4af3;
+  border-color: rgb(129, 121, 121);
+}
+nav li a {
+  font-family: "Abril Fatface", cursive;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1;
+  margin: 3;
+} */
+.formulario {
+  background-image: url("../assets/image/divs");
+  font-family: "Abril Fatface", cursive;
+  width: 50%;
+  height: 65%;
+  border: 5px outset rgb(46, 44, 44);
+  color: #b430c5;
+}
+input {
+  font-family: "Abril Fatface", cursive;
+  background-color: black;
+  color: white;
+}
+textarea {
+  font-family: "Abril Fatface", cursive;
+  background-color: black;
+  color: white;
+}
+.input-button {
+  color: white;
+  background-color: grey;
+}
+.padre {
+  /* background-color: rgba(10, 217, 224, 0.87); */
+  /* margin: 20px auto;
+    width: 90%; */
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "header, header, header"
+    "body, body, body"
+    "footer, footer, footer";
+}
+.hijo {
+  background-color: yellow;
+  border: solid rgb(55, 0, 255) 3px;
+  color: green;
+  font-size: 1.5em;
+  text-align: center;
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    text-align: center;
+    margin: auto;
+  }
+  .padre {
+    margin: auto;
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .hijo {
+    background-color: yellow;
+    border: solid rgb(55, 0, 255) 3px;
+    color: green;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  @media only screen and (max-width: 768px) {
+    body {
+      background-color: rgb(11, 135, 243);
+      text-align: center;
+    }
+    .padre {
+      width: 90%;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .hijo {
+      background-color: yellow;
+      border: solid rgb(4, 1, 15) 3px;
+      color: red;
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    body {
+      background-color: black;
+      text-align: center;
+    }
+    h2 {
+      text-overflow: 10px;
+    }
+    .padre {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      gap: 10px;
+    }
+
+    .hijo {
+      background-color: yellow;
+      border: solid rgb(247, 247, 247) 3px;
+      color: white;
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+}
