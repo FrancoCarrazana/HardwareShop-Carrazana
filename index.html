@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./style/bootstrap.min.css">
     <title>HardwareShop</title>
 </head>
 
 <body >
-    <header>
+    <header class="container-fluid">
+      <div class="wide-xs-12 wide-sm-12 wide-lg-12 p-3">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="./assets/image/icon/favicon.ico" alt="HardwareShop" width="100"></a>
@@ -36,27 +37,31 @@
               </div>
             </div>
           </nav>
+      </div>
     </header>
-    <main class="padre">
-        <section class="sector hijo">
-           <div class="publicidad">
+    <main class="padre" >
+        <section>
+           <div class="sector hijo">
+           <img src="./assets/image/descarga.jpg" class="sector-img" alt="publicidad">
             <h2>Pc Gamers</h2>
             <p>
                 Empeza a viciar
             </p>
            </div>
         </section>
-        <section class="sector hijo">
-            <div class="publicidad">
+        <section>
+            <div class="sector hijo">
+              <img src="./assets/image/componentes.png" class="sector-img" alt="publicidad">
                 <h2>HardwareShop</h2>
                 <p>
                    Tienda dedicada a componentes de pc 
                 </p>
             </div>
         </section>
-        <section class="sector hijo">
-            <div class="publicidad">
-                <h2>Comprar por categorias</h2>
+        <section>
+            <div class=" sector hijo publicidad">
+              <h2>Comprar por categorias</h2>
+              <img src="./assets/image/publicidad.jpg" class="sector-img" alt="publicidad">
                 <ul>
                     <li>
                         Almacenamiento

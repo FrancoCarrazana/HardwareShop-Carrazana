@@ -18,16 +18,7 @@ table {
   /* background-image: url("../assets/image/divs.jpg"); */
 }
 header {
-  background-color: #a72424e1;
   font-family: "Abril Fatface", cursive;
-  background: linear-gradient(
-    to top,
-    rgb(36, 36, 36),
-    rgb(41, 40, 41),
-    rgba(46, 46, 46, 0.925),
-    rgb(58, 57, 57),
-    rgba(68, 68, 68, 0.925)
-  );
   height: 20%;
   grid-area: header;
 }
@@ -49,8 +40,7 @@ footer {
   bottom: 0px;
   height: 30px;
   width: 100%;
-  background: #999;
-  /* background-image: url("../assets/image/fondo.jpg"); */
+  height: auto;
 }
 li {
   list-style-type: none;
@@ -119,7 +109,7 @@ main {
 }
 .sector {
   border: 5px outset rgb(209, 69, 26);
-  padding: 90px;
+  padding: 6%;
   height: 450px;
   width: 350px;
   background: radial-gradient(
@@ -133,11 +123,15 @@ main {
   align-self: center;
   transition: all 1.8s ease;
 }
+.sector-img {
+  border: 1px solid black;
+  border-radius: 3%;
+  width: 100%;
+  height: 180px;
+}
 .sector:hover {
   background-color: blueviolet;
   transform: translate(10px, 14px);
-  /* width: 250px;
-    height: 250px; */
   border-radius: 3%;
   border: 3px outset #ff0404;
 }
@@ -152,48 +146,6 @@ main {
 div {
   text-align: center;
 }
-/* nav ul {
-  list-style: none;
-  background-color: #444744;
-  display: flex;
-  justify-content: center;
-}
-nav ul a {
-  color: white;
-  text-decoration: none;
-  padding: 0.7rem;
-  display: block;
-  transition: all 1.5s ease;
-}
-nav ul a:hover {
-  background-color: rgba(5, 3, 0, 0.726);
-  color: rgb(243, 207, 6);
-  font-weight: bold;
-  transform: translate(2px, 4px);
-}
-nav {
-  font-family: "Abril Fatface", cursive;
-  list-style-type: none;
-  display: inline-block;
-  padding: 1;
-  margin: 3;
-}
-nav li {
-  font-family: "Abril Fatface", cursive;
-  text-align: center;
-  display: inline-block;
-  padding: 1;
-  margin: 3;
-  background-color: #4e4a4af3;
-  border-color: rgb(129, 121, 121);
-}
-nav li a {
-  font-family: "Abril Fatface", cursive;
-  text-decoration: none;
-  display: inline-block;
-  padding: 1;
-  margin: 3;
-} */
 .formulario {
   background-image: url("../assets/image/divs");
   font-family: "Abril Fatface", cursive;
@@ -217,10 +169,6 @@ textarea {
   background-color: grey;
 }
 .padre {
-  /* background-color: rgba(10, 217, 224, 0.87); */
-  /* margin: 20px auto;
-    width: 90%; */
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -235,7 +183,7 @@ textarea {
   border: solid rgb(55, 0, 255) 3px;
   color: green;
   font-size: 1.5em;
-  text-align: center;
+  text-align: start;
 }
 @media only screen and (max-width: 1000px) {
   body {
@@ -257,6 +205,11 @@ textarea {
     color: green;
     font-size: 1.5em;
     text-align: center;
+  }
+  .tableResponsive {
+    width: 100%;
+    height: 100%;
+    padding: auto;
   }
   @media only screen and (max-width: 768px) {
     body {
