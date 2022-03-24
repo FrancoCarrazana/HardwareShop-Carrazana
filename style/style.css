@@ -5,7 +5,7 @@
 }
 th {
   font-family: "Bebas Neue", sans-serif;
-  color: grey;
+  color: rgba(253, 253, 253, 0.822);
 }
 td {
   font-family: "Bebas Neue", sans-serif;
@@ -15,15 +15,14 @@ table {
   background-color: black;
   width: 50%;
   height: 30%;
-  /* background-image: url("../assets/image/divs.jpg"); */
 }
 header {
   font-family: "Abril Fatface", cursive;
   height: 20%;
-  grid-area: header;
 }
 body {
   width: 100%;
+  height: auto;
   background: linear-gradient(
     to top,
     rgb(36, 36, 36),
@@ -32,7 +31,6 @@ body {
     rgb(58, 57, 57),
     rgba(68, 68, 68, 0.925)
   );
-  grid-area: body;
 }
 footer {
   position: end;
@@ -40,7 +38,8 @@ footer {
   bottom: 0px;
   height: 30px;
   width: 100%;
-  height: auto;
+  height: 100px;
+  text-align: center;
 }
 li {
   list-style-type: none;
@@ -96,26 +95,47 @@ h5 {
 main {
   width: 100%;
   margin: 20px auto;
-  padding: auto;
-  height: 80vh;
-  border: solid black 3px;
-  display: flex;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  padding: 3%;
+  height: 165vh;
+  border: solid black 1px;
+  display: grid;
   gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "ef ef ef ef"
+    "ab c d e ";
 }
-.pie {
-  text-align: center;
+.ab {
+  background-color: coral;
+  grid-area: ab;
+}
+.ef {
+  background-color: blueviolet;
+  grid-area: ef;
+}
+.c {
+  background-color: chartreuse;
+  grid-area: c;
+}
+.e {
+  background-color: chartreuse;
+  grid-area: e;
+}
+.d {
+  background-color: fuchsia;
+  grid-area: d;
 }
 .sector {
   border: 5px outset rgb(209, 69, 26);
   padding: 6%;
   height: 450px;
-  width: 350px;
+  width: 300px;
   background: radial-gradient(
     circle,
-    rgb(253, 254, 255),
-    rgb(132, 132, 133),
+    rgb(27, 54, 82),
+    rgb(52, 52, 92),
     rgba(2, 2, 2, 0.925)
   );
   overflow: visible;
@@ -136,23 +156,39 @@ main {
   border: 3px outset #ff0404;
 }
 .sectorCarrucel {
-  border: 1px solid black;
-  padding: 90px;
-  height: 600px;
+  border: 3px solid black;
+  padding: 0px;
+  height: auto;
+  width: auto;
+  margin: 0px;
+  display: grid;
+  align-items: center;
+}
+.carrucelImg {
+  height: auto;
   width: 100%;
-  margin: auto;
-  display: flexbox;
 }
 div {
   text-align: center;
 }
+.productos {
+  padding: 0px;
+  height: 100%;
+  width: 90%;
+  border-radius: 3%;
+  border: 3px solid rgb(32, 58, 82);
+  background-color: black;
+}
 .formulario {
   background-image: url("../assets/image/divs");
   font-family: "Abril Fatface", cursive;
-  width: 50%;
-  height: 65%;
+  width: auto;
+  height: auto;
   border: 5px outset rgb(46, 44, 44);
   color: #b430c5;
+}
+button {
+  font-family: roboto;
 }
 input {
   font-family: "Abril Fatface", cursive;
@@ -168,7 +204,7 @@ textarea {
   color: white;
   background-color: grey;
 }
-.padre {
+/* .padre {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -177,9 +213,14 @@ textarea {
     "header, header, header"
     "body, body, body"
     "footer, footer, footer";
-}
+} */
 .hijo {
-  background-color: yellow;
+  background: radial-gradient(
+    circle,
+    rgb(27, 54, 82),
+    rgb(52, 52, 92),
+    rgba(2, 2, 2, 0.925)
+  );
   border: solid rgb(55, 0, 255) 3px;
   color: green;
   font-size: 1.5em;
@@ -190,16 +231,21 @@ textarea {
     text-align: center;
     margin: auto;
   }
-  .padre {
+  main {
     margin: auto;
     width: 90%;
-
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
+    grid-template-areas:
+      "ef ef "
+      "ab c"
+      "d e";
   }
   .hijo {
+    width: auto;
     background-color: yellow;
     border: solid rgb(55, 0, 255) 3px;
     color: green;
@@ -211,26 +257,37 @@ textarea {
     height: 100%;
     padding: auto;
   }
+  footer {
+    height: auto;
+  }
   @media only screen and (max-width: 768px) {
     body {
       background-color: rgb(11, 135, 243);
       text-align: center;
     }
-    .padre {
+    main {
       width: 90%;
-
+      height: auto;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       gap: 10px;
+      grid-template-areas:
+        "ef ef "
+        "ab c"
+        "d e";
     }
     .hijo {
+      width: auto;
       background-color: yellow;
       border: solid rgb(4, 1, 15) 3px;
       color: red;
       font-size: 1.5em;
       text-align: center;
     }
+  }
+  footer {
+    height: auto;
   }
 
   @media only screen and (max-width: 500px) {
@@ -241,20 +298,31 @@ textarea {
     h2 {
       text-overflow: 10px;
     }
-    .padre {
+    main {
       width: 90%;
+      height: auto;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(1, 1fr);
       gap: 10px;
+      grid-template-areas:
+        "ef"
+        "ab"
+        "c"
+        "d"
+        "e";
     }
 
     .hijo {
+      width: auto;
       background-color: yellow;
       border: solid rgb(247, 247, 247) 3px;
       color: white;
       font-size: 1.5em;
       text-align: center;
+    }
+    footer {
+      height: auto;
     }
   }
 }
