@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(
+    to top,
+    rgb(36, 36, 36),
+    rgb(41, 40, 41),
+    rgba(46, 46, 46, 0.925),
+    rgb(58, 57, 57),
+    rgba(68, 68, 68, 0.925)
+  );
+}
+p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  padding: 3px;
+  color: rgba(148, 141, 50, 0.658);
+  margin: auto;
+}
+h1 {
+  font-family: "Abril Fatface", cursive;
+  color: #221e47;
+  line-height: 1.5em;
+  text-align: center;
+  word-spacing: 5px;
+}
+h2 {
+  font-family: "Abril Fatface", cursive;
+  color: #2e3c8d;
+  line-height: 1.5em;
+  padding: 3px;
+}
+h3 {
+  font-family: "Abril Fatface", cursive;
+  color: #221e47;
+  line-height: 1.5em;
+  padding: 10px;
+  margin: 20px;
+}
+h4 {
+  font-family: "Abril Fatface", cursive;
+  color: #28a1a1;
+  line-height: 1.5em;
+  padding: 5px;
+}
+h5 {
+  font-family: "Abril Fatface", cursive;
+  color: #221e47;
+  line-height: 1.5em;
+  padding: 100%;
+  margin: 100%;
+}
+.hijo {
+  background: radial-gradient(
+    circle,
+    rgb(27, 54, 82),
+    rgb(52, 52, 92),
+    rgba(2, 2, 2, 0.925)
+  );
+  border: solid rgb(55, 0, 255) 3px;
+  color: green;
+  font-size: 1.5em;
+  text-align: start;
+}

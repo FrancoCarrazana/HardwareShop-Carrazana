@@ -1,0 +1,87 @@
+main {
+    width: 100%;
+    margin: 20px auto;
+    padding: 3%;
+    height: 165vh;
+    border: solid black 1px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas:
+      "ef ef ef ef"
+      "ab c d e ";
+  }
+  .ab {
+    background-color: coral;
+    grid-area: ab;
+  }
+  .ef {
+    background-color: blueviolet;
+    grid-area: ef;
+  }
+  .c {
+    background-color: chartreuse;
+    grid-area: c;
+  }
+  .e {
+    background-color: chartreuse;
+    grid-area: e;
+  }
+  .d {
+    background-color: fuchsia;
+    grid-area: d;
+  }
+  .sector {
+    border: 5px outset rgb(209, 69, 26);
+    padding: 6%;
+    height: 450px;
+    width: 300px;
+    background: radial-gradient(
+      circle,
+      rgb(27, 54, 82),
+      rgb(52, 52, 92),
+      rgba(2, 2, 2, 0.925)
+    );
+    overflow: visible;
+    display: grid;
+    align-self: center;
+    transition: all 1.8s ease;
+  }
+  .sector-img {
+    border: 1px solid black;
+    border-radius: 3%;
+    width: 100%;
+    height: 180px;
+  }
+  .sector:hover {
+    background-color: blueviolet;
+    transform: translate(10px, 14px);
+    border-radius: 3%;
+    border: 3px outset #ff0404;
+  }
+  .sectorCarrucel {
+    border: 3px solid black;
+    padding: 0px;
+    height: auto;
+    width: auto;
+    margin: 0px;
+    display: grid;
+    align-items: center;
+  }
+  .carrucelImg {
+    height: auto;
+    width: 100%;
+  }
+  div {
+    text-align: center;
+  }
+  .productos {
+    padding: 0px;
+    height: 100%;
+    width: 90%;
+    border-radius: 3%;
+    border: 3px solid rgb(32, 58, 82);
+    background-color: rgb(170, 0, 0);
+  }

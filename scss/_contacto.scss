@@ -1,0 +1,47 @@
+table {
+  background-color: black;
+  width: 50%;
+  height: 30%;
+}
+.productos {
+  padding: 0px;
+  height: 100%;
+  width: 90%;
+  border-radius: 3%;
+  border: 3px solid rgb(32, 58, 82);
+  background-color: black;
+}
+button {
+  font-family: roboto;
+}
+input {
+  font-family: "Abril Fatface", cursive;
+  background-color: black;
+  color: white;
+}
+textarea {
+  font-family: "Abril Fatface", cursive;
+  background-color: black;
+  color: white;
+}
+.input-button {
+  color: white;
+  background-color: grey;
+}
+th {
+  font-family: "Bebas Neue", sans-serif;
+  color: rgba(253, 253, 253, 0.822);
+}
+td {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+}
+li {
+  list-style-type: none;
+  padding: 5%;
+  margin: 0%;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  color: rgba(148, 141, 50, 0.658);
+}
