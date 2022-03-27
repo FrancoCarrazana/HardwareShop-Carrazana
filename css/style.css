@@ -6,7 +6,11 @@
 body {
   width: 100%;
   height: auto;
-  background: linear-gradient(to top, #242424, #292829, rgba(46, 46, 46, 0.925), #3a3939, rgba(68, 68, 68, 0.925)); }
+  background: linear-gradient(to top, #242424, #292829, rgba(46, 46, 46, 0.925), #3a3939, rgba(68, 68, 68, 0.925));
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "header1 header1 header1" "main main main" "footer footer footer"; }
 
 p {
   font-family: "Bebas Neue", sans-serif;
@@ -58,16 +62,30 @@ h5 {
 
 header {
   font-family: "Abril Fatface", cursive;
-  height: 20%; }
+  height: 30%;
+  padding: 10px;
+  grid-area: header1; }
+  header a {
+    color: #070008;
+    text-decoration: none; }
+
+.slide {
+  margin: top 10px;
+  height: 60vh;
+  width: 100%;
+  padding: 10px; }
+
+.slide img {
+  height: 60vh; }
 
 main {
-  width: 100%;
-  margin: 20px auto;
+  width: 97%;
+  margin: top auto;
   padding: 3%;
-  height: 165vh;
+  height: 100vh;
   border: solid black 1px;
+  grid-area: main;
   display: grid;
-  gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 10px;
@@ -96,7 +114,7 @@ main {
 .sector {
   border: 5px outset #d1451a;
   padding: 6%;
-  height: 450px;
+  height: 350px;
   width: 300px;
   background: radial-gradient(circle, #1b3652, #34345c, rgba(2, 2, 2, 0.925));
   overflow: visible;
@@ -116,16 +134,15 @@ main {
   border-radius: 3%;
   border: 3px outset #ff0404; }
 
-.sectorCarrucel {
-  border: 3px solid black;
-  padding: 0px;
+.sCarrucel {
+  padding: 0;
   height: auto;
-  width: auto;
-  margin: 0px;
-  display: grid;
-  align-items: center; }
+  width: 100%;
+  margin: 3px;
+  display: grid; }
 
 .carrucelImg {
+  border: 3px solid #9b18d8;
   height: auto;
   width: 100%; }
 
@@ -147,7 +164,8 @@ footer {
   height: 30px;
   width: 100%;
   height: 100px;
-  text-align: center; }
+  text-align: center;
+  grid-area: footer; }
 
 .formulario {
   background-image: url("../assets/image/divs");
@@ -203,6 +221,81 @@ li {
   font-size: 15px;
   line-height: 1.5em;
   color: rgba(148, 141, 50, 0.658); }
+
+.poCoFather {
+  border: 3px solid rgba(3, 3, 3, 0.493);
+  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 120vh;
+  width: 100%;
+  flex-wrap: wrap; }
+
+.politicsContent {
+  border: 5px solid white;
+  width: 100%;
+  height: 110vh;
+  margin: auto;
+  padding: 30px;
+  display: block;
+  overflow: visible;
+  display: block;
+  align-self: center;
+  text-align: center;
+  background: radial-gradient(circle, #1b3652, #34345c, rgba(2, 2, 2, 0.925)); }
+  .politicsContent h1 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px; }
+  .politicsContent h2 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px; }
+  .politicsContent p {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    padding: 3px;
+    color: rgba(255, 251, 4, 0.658);
+    margin: auto; }
+
+.questionM {
+  width: 100%;
+  height: 160vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  grid-template-areas: "ef ef " "m v" "d e"; }
+
+.questionC {
+  border: 1px solid black;
+  padding: 10px;
+  width: 3fr;
+  margin: auto;
+  background: radial-gradient(circle, #1b3652, #34345c, rgba(2, 2, 2, 0.925)); }
+
+.m {
+  grid-area: m; }
+
+.v {
+  grid-area: v; }
+
+.y {
+  grid-area: y; }
+
+.t {
+  grid-area: t; }
+
+.j {
+  grid-area: j; }
 
 @media only screen and (max-width: 1000px) {
   body {

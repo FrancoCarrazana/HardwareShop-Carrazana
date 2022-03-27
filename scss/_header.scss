@@ -1,4 +1,19 @@
 header {
   font-family: "Abril Fatface", cursive;
-  height: 20%;
+  height: 30%;
+  padding: 10px;
+  grid-area: header1;
+  a {
+    color: #070008;
+    text-decoration: none;
+  }
+}
+.slide {
+  margin: top 10px;
+  height: 60vh;
+  width: 100%;
+  padding: 10px;
+}
+.slide img {
+  height: 60vh;
 }
