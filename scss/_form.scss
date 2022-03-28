@@ -1,8 +1,24 @@
+.fFather {
+  background-image: url(/assets/image/divs.jpg);
+  display: flex;
+  height: 110vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .formulario {
-  background-image: url("../assets/image/divs");
+  background-color: rgba(8, 82, 124, 0.8);
   font-family: "Abril Fatface", cursive;
+  display: block;
   width: auto;
-  height: auto;
+  height: 100vh;
   border: 5px outset rgb(46, 44, 44);
   color: #b430c5;
+  label {
+    font-family: "Abril Fatface", cursive;
+    color: #b430c5;
+    text-align: center;
+    margin: 0;
+    padding: 2px;
+  }
 }

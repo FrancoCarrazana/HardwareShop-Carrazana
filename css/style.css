@@ -167,26 +167,49 @@ footer {
   text-align: center;
   grid-area: footer; }
 
+.fFather {
+  background-image: url(/assets/image/divs.jpg);
+  display: flex;
+  height: 110vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center; }
+
 .formulario {
-  background-image: url("../assets/image/divs");
+  background-color: rgba(8, 82, 124, 0.8);
   font-family: "Abril Fatface", cursive;
+  display: block;
   width: auto;
-  height: auto;
+  height: 100vh;
   border: 5px outset #2e2c2c;
   color: #b430c5; }
+  .formulario label {
+    font-family: "Abril Fatface", cursive;
+    color: #b430c5;
+    text-align: center;
+    margin: 0;
+    padding: 2px; }
 
-table {
-  background-color: black;
-  width: 50%;
-  height: 30%; }
+.pFather {
+  background-image: url(/assets/image/divs.jpg);
+  display: flex;
+  height: 110vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.tHijo {
+  background-color: #0a8cd8;
+  height: 550px; }
 
 .productos {
   padding: 0px;
-  height: 100%;
+  height: 100vh;
   width: 90%;
   border-radius: 3%;
   border: 3px solid #203a52;
-  background-color: black; }
+  background-color: #0a8cd8;
+  display: block; }
 
 button {
   font-family: roboto; }
@@ -240,7 +263,6 @@ li {
   padding: 30px;
   display: block;
   overflow: visible;
-  display: block;
   align-self: center;
   text-align: center;
   background: radial-gradient(circle, #1b3652, #34345c, rgba(2, 2, 2, 0.925)); }
@@ -268,15 +290,10 @@ li {
 
 .questionM {
   width: 100%;
-  height: 160vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  grid-template-areas: "ef ef " "m v" "d e"; }
+  height: 100vh;
+  display: flex; }
 
 .questionC {
-  border: 1px solid black;
   padding: 10px;
   width: 3fr;
   margin: auto;
