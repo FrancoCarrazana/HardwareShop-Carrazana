@@ -377,12 +377,25 @@ li {
   main {
     margin: auto;
     width: 90%;
+    height: auto; }
+  .main-container {
     height: auto;
+    padding: 13%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
-    grid-template-areas: "ef ef " "ab c" "d e"; }
+    grid-template-areas: "ab j" "c n"; }
+  .main-container-marcas {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-areas: "p p p " "u i r " "w m x" "x t y" "z f"; }
   .hijo {
     width: auto;
     background-color: yellow;
@@ -402,13 +415,27 @@ li {
     background-color: #0b87f3;
     text-align: center; }
   main {
-    width: 90%;
+    width: auto;
     height: auto;
+    display: grid; }
+  .main-container {
+    height: auto;
+    padding: 5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
-    grid-template-areas: "ef ef " "ab c" "d e"; }
+    grid-template-areas: "ab j" "c n"; }
+  .main-container-marcas {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    grid-template-areas: "p p " "u i " "r w " "m x" "t y" "z f"; }
   .hijo {
     width: auto;
     background-color: yellow;
@@ -430,11 +457,25 @@ li {
   main {
     width: 90%;
     height: auto;
+    display: grid; }
+  .main-container {
+    height: auto;
+    padding: 8%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
-    grid-template-areas: "ef" "ab" "c" "d" "e"; }
+    grid-template-areas: "ab " "j " "c " "n"; }
+  .main-container-marcas {
+    width: 100%;
+    padding: 80px;
+    height: auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    grid-template-areas: "p " "u" "i" "r " "w" "m " "x" "t " "y" "z" "f"; }
   .hijo {
     width: auto;
     background-color: yellow;
