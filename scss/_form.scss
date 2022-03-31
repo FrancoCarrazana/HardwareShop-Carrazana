@@ -1,24 +1,42 @@
 .fFather {
-  background-image: url(/assets/image/divs.jpg);
   display: flex;
-  height: 110vh;
+  height: 82vh;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+  border: none;
 }
 .formulario {
-  background-color: rgba(8, 82, 124, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   font-family: "Abril Fatface", cursive;
   display: block;
   width: auto;
-  height: 100vh;
-  border: 5px outset rgb(46, 44, 44);
-  color: #b430c5;
+  height: 79vh;
+  margin: 0 auto;
+  border: 3px solid grey;
+  color: black;
   label {
     font-family: "Abril Fatface", cursive;
-    color: #b430c5;
+    color: black;
     text-align: center;
     margin: 0;
     padding: 2px;
   }
+}
+.input-button {
+  color: white;
+  background-color: grey;
+}
+button {
+
+  font-family: roboto;
+}
+input {
+  font-family: "Abril Fatface", cursive;
+  padding: 3px;
+  color: white;
+}
+textarea {
+  font-family: "Abril Fatface", cursive;
+  color: white;
 }

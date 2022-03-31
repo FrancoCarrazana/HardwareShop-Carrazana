@@ -1,16 +1,13 @@
-// .qfather{
-//   width: 100%;
-//   height: 110vh;
-// }
-.questionM {
-  // border: 3px solid rgba(3, 3, 3, 0.493);
+.qfather{
   width: 100%;
-  height: 100vh;
-  display: flex;
+  height: 111vh;
+  border: none;
 }
-.questionC {
-  padding: 10px;
-  width: 3fr;
+.questionM {
+  border: 3px solid grey; 
+  width: 70%;
+  height: 110vh;
+  display: flex;
   margin: auto;
   background: radial-gradient(
     circle,
@@ -18,19 +15,14 @@
     rgb(52, 52, 92),
     rgba(2, 2, 2, 0.925)
   );
+  h1{
+    color: black;
+    font-size: 3em;
+  }
 }
-// .m {
-//   grid-area: m;
-// }
-// .v {
-//   grid-area: v;
-// }
-// .y {
-//   grid-area: y;
-// }
-// .t {
-//   grid-area: t;
-// }
-// .j {
-//   grid-area: j;
-// }
+.questionC {
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  height: 25vh;
+}

@@ -17,7 +17,7 @@
 <body >
     <header class="container-fluid">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-lg-12">
+        <div class="menu col-xs-12 col-sm-12 col-lg-12">
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
               <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html"><img src="./assets/image/icon/favicon.ico" alt="HardwareShop" width="100"></a>
@@ -47,39 +47,35 @@
             </nav>
         </div>
       </div>
-        <div class="sCarrucel wide-xs-3 wide-sm-9 wide-lg-12 p-3">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100 carrucelImg" src="./assets/image/publicidad-carrucel.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 carrucelImg" src="./assets/image/publicidad-carrucel2.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 carrucelImg" src="./assets/image/publicidad-carrucel3.png" alt="Third slide">
-              </div>
+      <div class="sCarrucel wide-xs-12 wide-sm-12 wide-lg-12">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/image/publicidad-carrucel.png" class="d-block w-100" alt="First slide">
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only"></span>
-            </a>
+            <div class="carousel-item">
+              <img src="./assets/image/publicidad-carrucel2.png" class="d-block w-100" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/image/publicidad-carrucel3.png" class="d-block w-100" alt="Third slide">
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
     </header>
     <main>
       <div class="main-container">
-
-        <section>
+        <div class="sTitulo sHijo p">
+           <h1 class="sh1">Potencia tu manera de jugar</h1>
+        </div>
            <div class="sector hijo ab">
              <h2>Pc Gamers</h2>
              <img src="./assets/image/descarga.jpg" class="sector-img" alt="publicidad">
@@ -87,8 +83,6 @@
                 Empeza a viciar
             </p>
            </div>
-        </section>
-        <section>
             <div class="sector hijo c">
               <h2>HardwareShop</h2>
               <img src="./assets/image/componentes.png" class="sector-img" alt="publicidad">
@@ -96,41 +90,16 @@
                    Tienda dedicada a componentes de pc 
                 </p>
             </div>
-        </section>
-        <!-- <section>
-            <div class=" sector hijo publicidad e">
-              <h2>Comprar por categorias</h2>
-              <img src="./assets/image/publicidad.jpg" class="sector-img" alt="publicidad">
-                <ul>
-                    <li>
-                        Almacenamiento
-                    </li>
-                    <li>
-                        Auriculares
-                    </li>
-                    <li>
-                        Conectividad
-                    </li>
-                    <li>
-                        Fuentes
-                    </li>
-                </ul>
-            </div>
-        </section> -->
-        <section>
           <div class="sText sHijo n">
-<p>
-   aca vas a poder encontrar los mejores perifericos para potenciar tu lado Gaming.
-</p>
-          </div>
-        </section>
-        <section>
+            <p>
+              acá vas a poder encontrar los mejores periféricos para potenciar tu lado Gaming al máximo que más se amolden a tu jugabilidad y expectativas.
+            </p>
+          </div>    
           <div class="sText sHijo j">
-<p>
-   Tambien podes encontrar los mejores componentes para llevar al maximo tu PC.
-</p>
+            <p>
+              También podés encontrar los mejores componentes para llevar al máximo tu PC y correr todos los juegos de última generación que desees.
+            </p>
           </div>
-        </section>
       </div>
       <div class="main-container-marcas">
       <div class="mainMarcasText">

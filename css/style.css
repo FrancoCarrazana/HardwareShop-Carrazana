@@ -6,7 +6,7 @@
 body {
   width: 100%;
   height: auto;
-  background: linear-gradient(to top, #242424, #292829, rgba(46, 46, 46, 0.925), #3a3939, rgba(68, 68, 68, 0.925));
+  background: linear-gradient(to top, white, #e7e7e7, rgba(236, 225, 225, 0.925), #faefef, rgba(207, 207, 207, 0.925));
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -17,19 +17,19 @@ p {
   font-size: 15px;
   line-height: 1.5em;
   padding: 3px;
-  color: rgba(148, 141, 50, 0.658);
+  color: grey;
   margin: auto; }
 
 h1 {
   font-family: "Abril Fatface", cursive;
-  color: #221e47;
+  color: black;
   line-height: 1.5em;
   text-align: center;
   word-spacing: 5px; }
 
 h2 {
   font-family: "Abril Fatface", cursive;
-  color: #2e3c8d;
+  color: black;
   line-height: 1.5em;
   padding: 3px; }
 
@@ -54,8 +54,7 @@ h5 {
   margin: 100%; }
 
 .hijo {
-  background: radial-gradient(circle, #1b3652, #34345c, rgba(2, 2, 2, 0.925));
-  border: solid #3700ff 3px;
+  border: solid 3px;
   color: green;
   font-size: 1.5em;
   text-align: start; }
@@ -63,42 +62,52 @@ h5 {
 header {
   font-family: "Abril Fatface", cursive;
   height: 30%;
-  padding: 10px;
+  margin: 5px;
   grid-area: header1; }
   header a {
     color: #070008;
     text-decoration: none; }
 
+.menu {
+  width: 100%;
+  height: 200px; }
+  .menu img {
+    height: 90px;
+    width: 90px; }
+
 .slide {
   margin: top 10px;
-  height: 60vh;
+  height: 350px, auto;
   width: 100%;
-  padding: 10px; }
+  padding: 0px;
+  border: 1px solid grey; }
 
 .slide img {
-  height: 60vh; }
+  height: auto;
+  width: 100%, auto; }
 
 main {
   width: 100%;
   margin: top auto;
   padding: 0%;
-  height: 210vh;
+  height: 188vh,auto;
   border: 3px solid black;
   grid-area: main; }
 
 .main-container {
-  height: 100vh;
-  padding: 13%;
+  height: 153vh;
+  margin: 0;
+  padding: 5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
-  grid-template-areas: "ab j" "c n"; }
+  grid-template-areas: "q q" "ab j" "c n"; }
 
 .main-container-marcas {
   width: 100%;
-  padding: 20px;
-  height: 100vh;
+  padding: 50px;
+  height: 85vh;
   background-color: white;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -120,13 +129,19 @@ main {
 .mainMarcasImg {
   width: 210px;
   height: 130px;
-  padding: 3px;
+  padding: 5px;
   border-radius: 3%;
   border: 1px solid black;
   display: flex;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+
+.mainMarcasImg:hover {
+  cursor: pointer; }
+
+.q {
+  grid-area: q; }
 
 .m {
   grid-area: m; }
@@ -171,23 +186,33 @@ main {
   grid-area: n; }
 
 .sector {
-  border: 5px outset #d1451a;
+  border: 1px outset grey;
   padding: 6%;
-  height: 350px;
-  width: 300px;
-  background: radial-gradient(circle, #1b3652, #34345c, rgba(2, 2, 2, 0.925));
+  height: 370px;
+  width: 340px;
   overflow: visible;
+  background-color: #8f8686;
   display: grid;
   align-self: center;
   transition: all 1.8s ease; }
+  .sector p {
+    color: black; }
 
 .sText {
   padding: 6%;
-  height: 350px;
+  height: auto;
   width: 300px;
   overflow: visible;
   align-self: center;
   transition: all 1.8s ease; }
+
+.sTitulo {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: grid;
+  padding: 20px, auto;
+  text-align: center; }
 
 .sHijo {
   font-size: 1.5em;
@@ -200,25 +225,9 @@ main {
   height: 180px; }
 
 .sector:hover {
-  background-color: blueviolet;
   transform: translate(10px, 14px);
   border-radius: 3%;
-  border: 3px outset #ff0404; }
-
-.sCarrucel {
-  padding: 0;
-  height: auto;
-  width: 100%;
-  margin: 3px;
-  display: grid; }
-
-.carrucelImg {
-  border: 3px solid #9b18d8;
-  height: auto;
-  width: 100%; }
-
-div {
-  text-align: center; }
+  border: 1px outset black; }
 
 .productos {
   padding: 0px;
@@ -236,33 +245,56 @@ footer {
   width: 100%;
   height: 100px;
   text-align: center;
-  grid-area: footer; }
+  grid-area: footer;
+  border: 2px solid black;
+  background-color: #272a2c; }
+  footer p {
+    color: white; }
+  footer a {
+    color: white; }
 
 .fFather {
-  background-image: url(/assets/image/divs.jpg);
   display: flex;
-  height: 110vh;
+  height: 82vh;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  border: none; }
 
 .formulario {
-  background-color: rgba(8, 82, 124, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   font-family: "Abril Fatface", cursive;
   display: block;
   width: auto;
-  height: 100vh;
-  border: 5px outset #2e2c2c;
-  color: #b430c5; }
+  height: 79vh;
+  margin: 0 auto;
+  border: 3px solid grey;
+  color: black; }
   .formulario label {
     font-family: "Abril Fatface", cursive;
-    color: #b430c5;
+    color: black;
     text-align: center;
     margin: 0;
     padding: 2px; }
 
+.input-button {
+  color: white;
+  background-color: grey; }
+
+button {
+  font-family: roboto; }
+
+input {
+  font-family: "Abril Fatface", cursive;
+  padding: 3px;
+  color: white; }
+
+textarea {
+  font-family: "Abril Fatface", cursive;
+  color: white; }
+
 .pFather {
-  background-image: url(/assets/image/divs.jpg);
+  border: none;
   display: flex;
   height: 110vh;
   width: 100%;
@@ -274,30 +306,13 @@ footer {
   height: 550px; }
 
 .productos {
-  padding: 0px;
+  padding: 20px;
   height: 100vh;
   width: 90%;
   border-radius: 3%;
   border: 3px solid #203a52;
   background-color: #0a8cd8;
   display: block; }
-
-button {
-  font-family: roboto; }
-
-input {
-  font-family: "Abril Fatface", cursive;
-  background-color: black;
-  color: white; }
-
-textarea {
-  font-family: "Abril Fatface", cursive;
-  background-color: black;
-  color: white; }
-
-.input-button {
-  color: white;
-  background-color: grey; }
 
 th {
   font-family: "Bebas Neue", sans-serif;
@@ -317,19 +332,19 @@ li {
   color: rgba(148, 141, 50, 0.658); }
 
 .poCoFather {
-  border: 3px solid rgba(3, 3, 3, 0.493);
+  border: none;
   grid-template-columns: repeat(3, 1fr);
   display: flex;
   align-items: center;
   margin: auto;
-  height: 120vh;
+  height: 125vh, auto;
   width: 100%;
   flex-wrap: wrap; }
 
 .politicsContent {
-  border: 5px solid white;
-  width: 100%;
-  height: 110vh;
+  border: 3px solid grey;
+  width: 80%;
+  height: 110vh, auto;
   margin: auto;
   padding: 30px;
   display: block;
@@ -359,16 +374,27 @@ li {
     color: rgba(255, 251, 4, 0.658);
     margin: auto; }
 
-.questionM {
+.qfather {
   width: 100%;
-  height: 100vh;
-  display: flex; }
+  height: 111vh;
+  border: none; }
+
+.questionM {
+  border: 3px solid grey;
+  width: 70%;
+  height: 110vh;
+  display: flex;
+  margin: auto;
+  background: radial-gradient(circle, #1b3652, #34345c, rgba(2, 2, 2, 0.925)); }
+  .questionM h1 {
+    color: black;
+    font-size: 3em; }
 
 .questionC {
   padding: 10px;
-  width: 3fr;
+  width: 100%;
   margin: auto;
-  background: radial-gradient(circle, #1b3652, #34345c, rgba(2, 2, 2, 0.925)); }
+  height: 25vh; }
 
 @media only screen and (max-width: 1000px) {
   body {
@@ -428,7 +454,7 @@ li {
     grid-template-areas: "ab j" "c n"; }
   .main-container-marcas {
     width: 100%;
-    padding: 20px;
+    padding: 85px;
     height: auto;
     background-color: white;
     display: grid;
@@ -455,7 +481,7 @@ li {
   h2 {
     text-overflow: 10px; }
   main {
-    width: 90%;
+    width: 100%;
     height: auto;
     display: grid; }
   .main-container {
@@ -468,7 +494,7 @@ li {
     grid-template-areas: "ab " "j " "c " "n"; }
   .main-container-marcas {
     width: 100%;
-    padding: 80px;
+    padding: 120px;
     height: auto;
     background-color: white;
     display: grid;

@@ -2,25 +2,27 @@ main {
   width: 100%;
   margin: top auto;
   padding: 0%;
-  height: 210vh;
+  height: 188vh,auto;
   border: 3px solid rgb(0, 0, 0);
   grid-area: main;
 }
 .main-container {
-  height: 100vh;
-  padding: 13%;
+  height: 153vh;
+  margin: 0;
+  padding:  5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   grid-template-areas:
+   "q q"
     "ab j"
     "c n";
 }
 .main-container-marcas {
   width: 100%;
-  padding: 20px;
-  height: 100vh;
+  padding: 50px;
+  height: 85vh;
   background-color: white;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -45,13 +47,19 @@ main {
 .mainMarcasImg {
   width: 210px;
   height: 130px;
-  padding: 3px;
+  padding: 5px;
   border-radius: 3%;
   border: 1px solid rgb(0, 0, 0);
   display: flex;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.mainMarcasImg:hover {
+  cursor: pointer;
+}
+.q{
+  grid-area: q;
 }
 .m {
   grid-area: m;
@@ -96,28 +104,34 @@ main {
   grid-area: n;
 }
 .sector {
-  border: 5px outset rgb(209, 69, 26);
+  border: 1px outset grey;
   padding: 6%;
-  height: 350px;
-  width: 300px;
-  background: radial-gradient(
-    circle,
-    rgb(27, 54, 82),
-    rgb(52, 52, 92),
-    rgba(2, 2, 2, 0.925)
-  );
+  height: 370px;
+  width: 340px;
   overflow: visible;
+  background-color: rgb(143, 134, 134);
   display: grid;
   align-self: center;
   transition: all 1.8s ease;
+  p{
+    color: black;
+  }
 }
 .sText {
   padding: 6%;
-  height: 350px;
+  height: auto;
   width: 300px;
   overflow: visible;
   align-self: center;
   transition: all 1.8s ease;
+}
+.sTitulo{
+  width: 100%;
+  height: auto;
+  margin:auto;
+  display: grid;
+  padding: 20px, auto;
+  text-align: center;
 }
 .sHijo {
   font-size: 1.5em;
@@ -130,26 +144,11 @@ main {
   height: 180px;
 }
 .sector:hover {
-  background-color: blueviolet;
   transform: translate(10px, 14px);
   border-radius: 3%;
-  border: 3px outset #ff0404;
+  border: 1px outset black;
 }
-.sCarrucel {
-  padding: 0;
-  height: auto;
-  width: 100%;
-  margin: 3px;
-  display: grid;
-}
-.carrucelImg {
-  border: 3px solid rgb(155, 24, 216);
-  height: auto;
-  width: 100%;
-}
-div {
-  text-align: center;
-}
+
 .productos {
   padding: 0px;
   height: 100%;
