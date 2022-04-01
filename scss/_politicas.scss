@@ -10,21 +10,16 @@
   flex-wrap: wrap;
 }
 .politicsContent {
-  border: 3px solid grey;
-  width: 80%;
-  height: 110vh, auto;
-  margin: auto;
-  padding: 30px;
-  display: block;
+  @extend .questionM;
+  // border: 3px solid grey;
+  // width: 80%;
+  // height: 110vh, auto;
+  // margin: auto;
+  // padding: 30px;
+  // display: block;
   overflow: visible;
   align-self: center;
   text-align: center;
-  background: radial-gradient(
-    circle,
-    rgb(27, 54, 82),
-    rgb(52, 52, 92),
-    rgba(2, 2, 2, 0.925)
-  );
   h1 {
     font-family: "Abril Fatface", cursive;
     font-size: 2em;
@@ -46,7 +41,7 @@
     font-size: 15px;
     line-height: 1.5em;
     padding: 3px;
-    color: rgba(255, 251, 4, 0.658);
+    color: rgba(0, 0, 0, 0.658);
     margin: auto;
   }
 }

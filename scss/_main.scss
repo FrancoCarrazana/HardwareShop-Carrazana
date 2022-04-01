@@ -1,9 +1,21 @@
+$width: 340px;
+$height: 370px;
+
+@mixin box ($width, $height) {
+  border: 1px outset grey;
+  padding: 6%;
+  height: $height;
+  width: $width;
+  p{
+    color: black;
+  }
+}
 main {
   width: 100%;
   margin: top auto;
   padding: 0%;
   height: 188vh,auto;
-  border: 3px solid rgb(0, 0, 0);
+  border: 3px solid black;
   grid-area: main;
 }
 .main-container {
@@ -15,7 +27,7 @@ main {
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   grid-template-areas:
-   "q q"
+    "q q"
     "ab j"
     "c n";
 }
@@ -104,23 +116,17 @@ main {
   grid-area: n;
 }
 .sector {
-  border: 1px outset grey;
-  padding: 6%;
-  height: 370px;
-  width: 340px;
+  @include box($width, $height);
   overflow: visible;
   background-color: rgb(143, 134, 134);
   display: grid;
   align-self: center;
   transition: all 1.8s ease;
-  p{
-    color: black;
-  }
+
 }
 .sText {
-  padding: 6%;
-  height: auto;
-  width: 300px;
+ @include box($width, $height);
+ border: none;
   overflow: visible;
   align-self: center;
   transition: all 1.8s ease;

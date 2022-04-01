@@ -1,20 +1,14 @@
 .qfather{
   width: 100%;
-  height: 111vh;
+  height: 113vh;
   border: none;
 }
 .questionM {
   border: 3px solid grey; 
   width: 70%;
-  height: 110vh;
-  display: flex;
+  height: 110vh,auto;
+  display: block;
   margin: auto;
-  background: radial-gradient(
-    circle,
-    rgb(27, 54, 82),
-    rgb(52, 52, 92),
-    rgba(2, 2, 2, 0.925)
-  );
   h1{
     color: black;
     font-size: 3em;
