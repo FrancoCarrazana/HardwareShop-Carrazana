@@ -32,12 +32,11 @@
       "p p p "
       "u i r "
       "w m x"
-      "x t y"
-      "z f";
+      "t y z"
+      "f f f";
   }
   .hijo {
-    width: auto;
-    background-color: yellow;
+    width: 300px;
     border: solid rgb(55, 0, 255) 3px;
     color: green;
     font-size: 1.5em;
@@ -91,7 +90,6 @@
     }
     .hijo {
       width: auto;
-      background-color: yellow;
       border: solid rgb(4, 1, 15) 3px;
       color: red;
       font-size: 1.5em;
@@ -154,7 +152,6 @@
 
     .hijo {
       width: auto;
-      background-color: yellow;
       border: solid rgb(247, 247, 247) 3px;
       color: white;
       font-size: 1.5em;
