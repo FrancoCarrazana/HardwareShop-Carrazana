@@ -476,6 +476,11 @@ li {
   .sector {
     width: 300px;
     height: 300px; }
+    .sector h2 {
+      font-size: 0.75em; }
+  .sector-img {
+    width: 100%, auto;
+    height: 180px; }
   .hijo {
     width: auto;
     border: solid #04010f 3px;
@@ -490,6 +495,7 @@ li {
 @media only screen and (max-width: 1000px) and (max-width: 500px) {
   body {
     background-color: black;
+    font-size: auto;
     text-align: center;
     height: auto; }
   h2 {
@@ -520,10 +526,9 @@ li {
     width: 250px;
     height: 300px; }
   .hijo {
-    width: auto;
-    border: solid #f7f7f7 3px;
+    border: solid grey 3px;
     color: white;
-    font-size: 1.5em;
+    font-size: auto;
     text-align: center; }
   footer {
     height: auto; } }
