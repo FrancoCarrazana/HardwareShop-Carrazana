@@ -345,7 +345,6 @@ li {
 
 .poCoFather {
   border: none;
-  grid-template-columns: repeat(3, 1fr);
   display: flex;
   align-items: center;
   margin: auto;
@@ -359,15 +358,15 @@ li {
   text-align: center; }
   .politicsContent h1 {
     font-family: "Abril Fatface", cursive;
-    font-size: 2em;
-    color: white;
+    font-size: 2em,auto;
+    color: black;
     text-align: center;
     margin: 0;
     padding: 20px; }
   .politicsContent h2 {
     font-family: "Abril Fatface", cursive;
     font-size: 1.5em;
-    color: white;
+    color: black;
     text-align: center;
     margin: 0;
     padding: 20px; }
@@ -376,12 +375,12 @@ li {
     font-size: 15px;
     line-height: 1.5em;
     padding: 3px;
-    color: rgba(0, 0, 0, 0.658);
+    color: black;
     margin: auto; }
 
 .qfather {
   width: 100%;
-  height: 113vh;
+  height: 113vh,auto;
   border: none; }
 
 .questionM, .politicsContent {
@@ -403,7 +402,8 @@ li {
 @media only screen and (max-width: 1000px) {
   body {
     text-align: center;
-    margin: auto; }
+    margin: auto;
+    height: auto; }
   main {
     margin: auto;
     width: 90%;
@@ -426,9 +426,14 @@ li {
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
     grid-template-areas: "p p p " "u i r " "w m x" "t y z" "f f f"; }
+  .menu {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    height: auto; }
   .hijo {
     width: 300px;
-    border: solid #3700ff 3px;
+    border: solid grey 3px;
     color: green;
     font-size: 1.5em;
     text-align: center; }
@@ -436,17 +441,20 @@ li {
     width: 100%;
     height: 100%;
     padding: auto; }
+  .sector {
+    width: 300px;
+    height: 300px; }
   footer {
     height: auto; } }
 
 @media only screen and (max-width: 1000px) and (max-width: 768px) {
   body {
     background-color: #0b87f3;
-    text-align: center; }
+    text-align: center;
+    height: auto; }
   main {
     width: auto;
-    height: auto;
-    display: grid; }
+    height: auto; }
   .main-container {
     height: auto;
     padding: 5%;
@@ -465,6 +473,9 @@ li {
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     grid-template-areas: "p p " "u i " "r w " "m x" "t y" "z f"; }
+  .sector {
+    width: 300px;
+    height: 300px; }
   .hijo {
     width: auto;
     border: solid #04010f 3px;
@@ -479,7 +490,8 @@ li {
 @media only screen and (max-width: 1000px) and (max-width: 500px) {
   body {
     background-color: black;
-    text-align: center; }
+    text-align: center;
+    height: auto; }
   h2 {
     text-overflow: 10px; }
   main {
@@ -504,6 +516,9 @@ li {
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     grid-template-areas: "p " "u" "i" "r " "w" "m " "x" "t " "y" "z" "f"; }
+  .sector {
+    width: 250px;
+    height: 300px; }
   .hijo {
     width: auto;
     border: solid #f7f7f7 3px;
