@@ -90,7 +90,7 @@ header {
   width: 100%, auto; }
 
 .sCarrucel {
-  display: block;
+  width: 100%;
   height: 400px;
   padding: 0; }
 
@@ -267,7 +267,7 @@ footer {
 
 .fFather {
   display: flex;
-  height: 82vh;
+  height: 82vh,auto;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
@@ -308,7 +308,7 @@ textarea {
 .pFather {
   border: none;
   display: flex;
-  height: 110vh;
+  height: 110vh,auto;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center; }
