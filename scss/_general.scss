@@ -63,9 +63,20 @@ h5 {
   padding: 100%;
   margin: 100%;
 }
-.hijo {
-  border: solid 3px;
-  color: green;
-  font-size: 1.5em;
-  text-align: start;
+.slide {
+  margin: top 10px;
+  height: auto;
+  width: auto;
+  padding: auto;
 }
+.slide img {
+  height: auto;
+  width: auto;
+}
+.sCarrucel {
+  width: 100%;
+  height:auto;
+  padding: 0;
+  border: 1px solid grey;
+}
+

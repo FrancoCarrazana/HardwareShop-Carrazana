@@ -14,20 +14,20 @@ main {
   width: 100%;
   margin: top auto;
   padding: 0%;
-  height: 188vh,auto;
+  height: auto;
   border: 3px solid black;
   grid-area: main;
 }
 .main-container {
   height: 153vh;
   margin: 0;
-  padding:  5%;
+  padding: 5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   grid-template-areas:
-    "q q"
+    "l l"
     "ab j"
     "c n";
 }
@@ -47,8 +47,10 @@ main {
 }
 .mainMarcasText {
   width: 100%;
-  height: 150px;
+  height: 100px;
   font-size: 50px;
+  padding:0;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   display: grid;
   grid-area: p;
@@ -57,9 +59,9 @@ main {
   background-repeat: no-repeat;
 }
 .mainMarcasImg {
-  width: 210px;
-  height: 130px;
-  padding: 5px;
+  width: 200px;
+  height: 150px;
+  padding: 10px;
   border-radius: 3%;
   border: 1px solid rgb(0, 0, 0);
   display: flex;
@@ -69,6 +71,9 @@ main {
 }
 .mainMarcasImg:hover {
   cursor: pointer;
+}
+.l{
+  grid-area: l;
 }
 .q{
   grid-area: q;
@@ -115,6 +120,9 @@ main {
 .n {
   grid-area: n;
 }
+.v{
+  grid-area: v;
+}
 .sector {
   @include box($width, $height);
   overflow: visible;
@@ -122,21 +130,19 @@ main {
   display: grid;
   align-self: center;
   transition: all 1.8s ease;
-
 }
 .sText {
  @include box($width, $height);
- border: none;
+ border: none;  
   overflow: visible;
   align-self: center;
   transition: all 1.8s ease;
 }
 .sTitulo{
   width: 100%;
-  height: auto;
-  margin:auto;
-  display: grid;
-  padding: 20px, auto;
+  height: 100px;
+  margin:0;
+  padding: 1px;
   text-align: center;
 }
 .sHijo {
@@ -146,20 +152,11 @@ main {
 .sector-img {
   border: 1px solid black;
   border-radius: 3%;
-  width: 100%;
+  width: 80%;
   height: 180px;
 }
 .sector:hover {
   transform: translate(10px, 14px);
   border-radius: 3%;
   border: 1px outset black;
-}
-
-.productos {
-  padding: 0px;
-  height: 100%;
-  width: 90%;
-  border-radius: 3%;
-  border: 3px solid rgb(32, 58, 82);
-  background-color: rgb(170, 0, 0);
 }

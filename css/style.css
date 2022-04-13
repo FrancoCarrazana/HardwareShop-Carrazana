@@ -53,11 +53,21 @@ h5 {
   padding: 100%;
   margin: 100%; }
 
-.hijo {
-  border: solid 3px;
-  color: green;
-  font-size: 1.5em;
-  text-align: start; }
+.slide {
+  margin: top 10px;
+  height: auto;
+  width: auto;
+  padding: auto; }
+
+.slide img {
+  height: auto;
+  width: auto; }
+
+.sCarrucel {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border: 1px solid grey; }
 
 header {
   font-family: "Abril Fatface", cursive;
@@ -78,27 +88,11 @@ header {
     height: 90px;
     width: 90px; }
 
-.slide {
-  margin: top 10px;
-  height: 350px;
-  width: 100%;
-  padding: auto;
-  border: 1px solid grey; }
-
-.slide img {
-  height: 400px;
-  width: 100%, auto; }
-
-.sCarrucel {
-  width: 100%;
-  height: 400px;
-  padding: 0; }
-
 main {
   width: 100%;
   margin: top auto;
   padding: 0%;
-  height: 188vh,auto;
+  height: auto;
   border: 3px solid black;
   grid-area: main; }
 
@@ -110,7 +104,7 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
-  grid-template-areas: "q q" "ab j" "c n"; }
+  grid-template-areas: "l l" "ab j" "c n"; }
 
 .main-container-marcas {
   width: 100%;
@@ -125,8 +119,10 @@ main {
 
 .mainMarcasText {
   width: 100%;
-  height: 150px;
+  height: 100px;
   font-size: 50px;
+  padding: 0;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   display: grid;
   grid-area: p;
@@ -135,9 +131,9 @@ main {
   background-repeat: no-repeat; }
 
 .mainMarcasImg {
-  width: 210px;
-  height: 130px;
-  padding: 5px;
+  width: 200px;
+  height: 150px;
+  padding: 10px;
   border-radius: 3%;
   border: 1px solid black;
   display: flex;
@@ -147,6 +143,9 @@ main {
 
 .mainMarcasImg:hover {
   cursor: pointer; }
+
+.l {
+  grid-area: l; }
 
 .q {
   grid-area: q; }
@@ -193,6 +192,9 @@ main {
 .n {
   grid-area: n; }
 
+.v {
+  grid-area: v; }
+
 .sector {
   border: 1px outset grey;
   padding: 6%;
@@ -220,10 +222,9 @@ main {
 
 .sTitulo {
   width: 100%;
-  height: auto;
-  margin: auto;
-  display: grid;
-  padding: 20px, auto;
+  height: 100px;
+  margin: 0;
+  padding: 1px;
   text-align: center; }
 
 .sHijo {
@@ -233,21 +234,13 @@ main {
 .sector-img {
   border: 1px solid black;
   border-radius: 3%;
-  width: 100%;
+  width: 80%;
   height: 180px; }
 
 .sector:hover {
   transform: translate(10px, 14px);
   border-radius: 3%;
   border: 1px outset black; }
-
-.productos {
-  padding: 0px;
-  height: 100%;
-  width: 90%;
-  border-radius: 3%;
-  border: 3px solid #203a52;
-  background-color: #aa0000; }
 
 footer {
   position: end;
@@ -257,9 +250,9 @@ footer {
   width: 100%;
   height: 100px;
   text-align: center;
-  grid-area: footer;
   border: 2px solid black;
-  background-color: #272a2c; }
+  background-color: #272a2c;
+  grid-area: footer; }
   footer p {
     color: white; }
   footer a {
@@ -267,7 +260,7 @@ footer {
 
 .fFather {
   display: flex;
-  height: 82vh,auto;
+  height: auto;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
@@ -277,9 +270,9 @@ footer {
   background-color: rgba(255, 255, 255, 0.8);
   font-family: "Abril Fatface", cursive;
   display: block;
-  width: auto;
-  height: 79vh;
-  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
   border: 3px solid grey;
   color: black; }
   .formulario label {
@@ -299,6 +292,7 @@ button {
 input {
   font-family: "Abril Fatface", cursive;
   padding: 3px;
+  width: auto;
   color: white; }
 
 textarea {
@@ -308,7 +302,7 @@ textarea {
 .pFather {
   border: none;
   display: flex;
-  height: 110vh,auto;
+  height: auto;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center; }
@@ -319,7 +313,7 @@ textarea {
 
 .productos {
   padding: 20px;
-  height: 100vh;
+  height: auto;
   width: 90%;
   border-radius: 3%;
   border: 3px solid #203a52;
@@ -358,11 +352,10 @@ li {
   text-align: center; }
   .politicsContent h1 {
     font-family: "Abril Fatface", cursive;
-    font-size: 2em,auto;
+    font-size: 3em;
     color: black;
-    text-align: center;
-    margin: 0;
-    padding: 20px; }
+    margin: 0px;
+    padding: 0px; }
   .politicsContent h2 {
     font-family: "Abril Fatface", cursive;
     font-size: 1.5em;
@@ -380,13 +373,14 @@ li {
 
 .qfather {
   width: 100%;
-  height: 113vh,auto;
-  border: none; }
+  height: auto;
+  border: none;
+  display: inline; }
 
 .questionM, .politicsContent {
   border: 3px solid grey;
   width: 70%;
-  height: 110vh,auto;
+  height: auto;
   display: block;
   margin: auto; }
   .questionM h1, .politicsContent h1 {
@@ -397,7 +391,7 @@ li {
   padding: 10px;
   width: 100%;
   margin: auto;
-  height: 25vh; }
+  height: 25vh,auto; }
 
 @media only screen and (max-width: 1000px) {
   body {
@@ -410,7 +404,8 @@ li {
     height: auto; }
   .main-container {
     height: auto;
-    padding: 13%;
+    width: auto;
+    padding: 0%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -426,6 +421,14 @@ li {
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
     grid-template-areas: "p p p " "u i r " "w m x" "t y z" "f f f"; }
+  .sTitulo {
+    padding: 0;
+    margin: 0;
+    height: auto; }
+  .sh1 {
+    padding: 0;
+    margin: 0;
+    height: 100px; }
   .menu {
     width: 100%;
     padding: 5px;
@@ -443,26 +446,37 @@ li {
     padding: auto; }
   .sector {
     width: 300px;
-    height: 300px; }
-  footer {
-    height: auto; } }
+    height: 300px; } }
 
-@media only screen and (max-width: 1000px) and (max-width: 768px) {
+footer {
+  height: 100px;
+  width: 100%; }
+
+@media only screen and (max-width: 768px) {
   body {
     background-color: #0b87f3;
     text-align: center;
     height: auto; }
   main {
-    width: auto;
+    width: 100%;
     height: auto; }
   .main-container {
     height: auto;
-    padding: 5%;
+    padding: 3%;
+    margin: 0;
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
     grid-template-areas: "ab j" "c n"; }
+  .sTitulo {
+    padding: 0;
+    margin: 0;
+    height: auto; }
+  .sh1 {
+    padding: 0;
+    margin: 0;
+    height: 100px; }
   .main-container-marcas {
     width: 100%;
     padding: 85px;
@@ -474,25 +488,24 @@ li {
     gap: 10px;
     grid-template-areas: "p p " "u i " "r w " "m x" "t y" "z f"; }
   .sector {
-    width: 300px;
-    height: 300px; }
+    display: block;
+    height: auto;
+    width: auto;
+    border: solid grey 3px;
+    color: red;
+    font-size: 1.5em;
+    text-align: center; }
     .sector h2 {
       font-size: 0.75em; }
   .sector-img {
-    width: 100%, auto;
-    height: 180px; }
-  .hijo {
-    width: auto;
-    border: solid #04010f 3px;
-    color: red;
-    font-size: 1.5em;
-    text-align: center; } }
+    width: 100%;
+    height: 180px; } }
 
-@media only screen and (max-width: 1000px) {
-  footer {
-    height: auto; } }
+footer {
+  height: 100px;
+  width: 100%; }
 
-@media only screen and (max-width: 1000px) and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   body {
     background-color: black;
     font-size: auto;
@@ -502,8 +515,7 @@ li {
     text-overflow: 10px; }
   main {
     width: 100%;
-    height: auto;
-    display: grid; }
+    height: 100%; }
   .main-container {
     height: auto;
     padding: 8%;
@@ -512,6 +524,9 @@ li {
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
     grid-template-areas: "ab " "j " "c " "n"; }
+  .slide {
+    width: auto;
+    height: auto; }
   .main-container-marcas {
     width: 100%;
     padding: 120px;
@@ -523,12 +538,27 @@ li {
     gap: 10px;
     grid-template-areas: "p " "u" "i" "r " "w" "m " "x" "t " "y" "z" "f"; }
   .sector {
-    width: 250px;
-    height: 300px; }
+    width: 1fr;
+    height: 1fr;
+    padding: 20px;
+    margin: top 30px; }
+  .sHijo {
+    width: 100%;
+    height: auto; }
   .hijo {
+    height: auto;
+    width: auto;
     border: solid grey 3px;
     color: white;
     font-size: auto;
     text-align: center; }
-  footer {
-    height: auto; } }
+  .politicsContent h1 {
+    font-size: 1.5em; } }
+
+.sector-img {
+  width: 85%;
+  height: 180px; }
+
+footer {
+  height: 100px;
+  width: 100%; }

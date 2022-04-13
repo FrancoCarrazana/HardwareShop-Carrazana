@@ -1,12 +1,13 @@
 .qfather{
   width: 100%;
-  height: 113vh,auto;
+  height: auto;
   border: none;
+  display: inline;
 }
 .questionM {
   border: 3px solid grey; 
   width: 70%;
-  height: 110vh,auto;
+  height: auto;
   display: block;
   margin: auto;
   h1{
@@ -18,5 +19,5 @@
   padding: 10px;
   width: 100%;
   margin: auto;
-  height: 25vh;
+  height: 25vh,auto;
 }
