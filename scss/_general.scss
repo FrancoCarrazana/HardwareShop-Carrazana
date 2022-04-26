@@ -6,14 +6,7 @@
 body {
   width: 100%;
   height: auto;
-  background: linear-gradient(
-    to top,
-    white,
-    rgb(231, 231, 231),
-    rgba(236, 225, 225, 0.925),
-    rgb(250, 239, 239),
-    rgba(207, 207, 207, 0.925)
-  );
+  background-image: url("../assets/image/fondo/subtle-prism.svg");
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -23,42 +16,42 @@ body {
     "footer footer footer";
 }
 p {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: roboto;
   font-size: 15px;
   line-height: 1.5em;
   padding: 3px;
-  color: grey;
+  color: black;
   margin: auto;
 }
 h1 {
-  font-family: "Abril Fatface", cursive;
+  font-family: 'Roboto Mono', monospace;
   color: black;
   line-height: 1.5em;
   text-align: center;
   word-spacing: 5px;
 }
 h2 {
-  font-family: "Abril Fatface", cursive;
+  font-family: 'Roboto Mono', monospace;
   color: black;
   line-height: 1.5em;
   padding: 3px;
 }
 h3 {
-  font-family: "Abril Fatface", cursive;
-  color: #221e47;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
   line-height: 1.5em;
   padding: 10px;
   margin: 20px;
 }
 h4 {
-  font-family: "Abril Fatface", cursive;
-  color: #28a1a1;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
   line-height: 1.5em;
   padding: 5px;
 }
 h5 {
-  font-family: "Abril Fatface", cursive;
-  color: #221e47;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
   line-height: 1.5em;
   padding: 100%;
   margin: 100%;

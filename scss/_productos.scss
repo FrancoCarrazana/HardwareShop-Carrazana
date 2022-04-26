@@ -1,38 +1,51 @@
-.pFather {
-  border:none;
-  display: flex;
+.product-father{
+  border: none;
+  padding: 0;
+  margin: 0;
   height: auto;
+  h1{
+    font-size: 3em;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+.box-product{
   width: 100%;
+  height: auto;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: space-around;
+  margin: 0 auto;
 }
-.tHijo {
-  background-color: rgb(10, 140, 216);
-  height: 550px;
-}
-.productos {
-  padding: 20px;
-  height: auto;
-  width: 90%;
-  border-radius: 3%;
-  border: 3px solid rgb(32, 58, 82);
-  background-color: rgb(10, 140, 216);
-  display: block;
-}
-th {
+.product{
+display: block;
+flex-direction: row;
+margin: 5px;
+height: 400px;
+width: 300px;
+border: solid rgb(0, 0, 0) 1px;
+text-align: center;
+h3{
   font-family: "Bebas Neue", sans-serif;
-  color: rgba(253, 253, 253, 0.822);
+  color: rgba(0, 0, 0, 0.822);
+  font-size: 20px;
 }
-td {
+p{
   font-family: "Bebas Neue", sans-serif;
-  color: white;
+  color: rgba(0, 0, 0, 0.822);
+  font-size: 40px;
+  margin: 5px;
 }
-li {
-  list-style-type: none;
-  padding: 5%;
-  margin: 0%;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 15px;
-  line-height: 1.5em;
-  color: rgba(148, 141, 50, 0.658);
+}
+.product-img{
+height: 200px;
+width: 250px;
+padding: 3%;
+margin: 5px;
 }

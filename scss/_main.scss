@@ -1,5 +1,5 @@
-$width: 340px;
-$height: 370px;
+$width: 350px;
+$height: 400px;
 
 @mixin box ($width, $height) {
   border: 1px outset grey;
@@ -15,27 +15,27 @@ main {
   margin: top auto;
   padding: 0%;
   height: auto;
-  border: 3px solid black;
   grid-area: main;
 }
 .main-container {
-  height: 153vh;
-  margin: 0;
-  padding: 5%;
+  height: auto;
+  margin: 2%;
+  padding-left: 25%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  align-self: center;
+  grid-template-columns: repeat(2, 0.3fr);
+  grid-template-rows: repeat(2, 0.3fr);
   gap: 10px;
   grid-template-areas:
-    "l l"
     "ab j"
-    "c n";
+    "n c";
 }
 .main-container-marcas {
   width: 100%;
   padding: 50px;
   height: 85vh;
   background-color: white;
+  border: 1.5px solid black;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -126,9 +126,11 @@ main {
 .sector {
   @include box($width, $height);
   overflow: visible;
-  background-color: rgb(143, 134, 134);
-  display: grid;
-  align-self: center;
+  background-image: url(../assets/image/fondo/scattered-forcefields.svg);
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  text-align: center;
   transition: all 1.8s ease;
 }
 .sText {
@@ -152,8 +154,8 @@ main {
 .sector-img {
   border: 1px solid black;
   border-radius: 3%;
-  width: 80%;
-  height: 180px;
+  width: 100%;
+  height: auto;
 }
 .sector:hover {
   transform: translate(10px, 14px);

@@ -6,49 +6,49 @@
 body {
   width: 100%;
   height: auto;
-  background: linear-gradient(to top, white, #e7e7e7, rgba(236, 225, 225, 0.925), #faefef, rgba(207, 207, 207, 0.925));
+  background-image: url("../assets/image/fondo/subtle-prism.svg");
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "header1 header1 header1" "main main main" "footer footer footer"; }
 
 p {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: roboto;
   font-size: 15px;
   line-height: 1.5em;
   padding: 3px;
-  color: grey;
+  color: black;
   margin: auto; }
 
 h1 {
-  font-family: "Abril Fatface", cursive;
+  font-family: 'Roboto Mono', monospace;
   color: black;
   line-height: 1.5em;
   text-align: center;
   word-spacing: 5px; }
 
 h2 {
-  font-family: "Abril Fatface", cursive;
+  font-family: 'Roboto Mono', monospace;
   color: black;
   line-height: 1.5em;
   padding: 3px; }
 
 h3 {
-  font-family: "Abril Fatface", cursive;
-  color: #221e47;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
   line-height: 1.5em;
   padding: 10px;
   margin: 20px; }
 
 h4 {
-  font-family: "Abril Fatface", cursive;
-  color: #28a1a1;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
   line-height: 1.5em;
   padding: 5px; }
 
 h5 {
-  font-family: "Abril Fatface", cursive;
-  color: #221e47;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
   line-height: 1.5em;
   padding: 100%;
   margin: 100%; }
@@ -70,20 +70,19 @@ h5 {
   border: 1px solid grey; }
 
 header {
-  font-family: "Abril Fatface", cursive;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
   height: 30%;
   padding: 10px;
   margin: 5px;
   grid-area: header1; }
-  header a {
-    color: #070008;
-    text-decoration: none; }
 
 .menu {
   width: 100%;
   height: 200px;
   padding: auto;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: black; }
   .menu img {
     height: 90px;
     width: 90px; }
@@ -93,24 +92,25 @@ main {
   margin: top auto;
   padding: 0%;
   height: auto;
-  border: 3px solid black;
   grid-area: main; }
 
 .main-container {
-  height: 153vh;
-  margin: 0;
-  padding: 5%;
+  height: auto;
+  margin: 2%;
+  padding-left: 25%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  align-self: center;
+  grid-template-columns: repeat(2, 0.3fr);
+  grid-template-rows: repeat(2, 0.3fr);
   gap: 10px;
-  grid-template-areas: "l l" "ab j" "c n"; }
+  grid-template-areas: "ab j" "n c"; }
 
 .main-container-marcas {
   width: 100%;
   padding: 50px;
   height: 85vh;
   background-color: white;
+  border: 1.5px solid black;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -198,12 +198,14 @@ main {
 .sector {
   border: 1px outset grey;
   padding: 6%;
-  height: 370px;
-  width: 340px;
+  height: 400px;
+  width: 350px;
   overflow: visible;
-  background-color: #8f8686;
-  display: grid;
-  align-self: center;
+  background-image: url(../assets/image/fondo/scattered-forcefields.svg);
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  text-align: center;
   transition: all 1.8s ease; }
   .sector p {
     color: black; }
@@ -211,8 +213,8 @@ main {
 .sText {
   border: 1px outset grey;
   padding: 6%;
-  height: 370px;
-  width: 340px;
+  height: 400px;
+  width: 350px;
   border: none;
   overflow: visible;
   align-self: center;
@@ -234,8 +236,8 @@ main {
 .sector-img {
   border: 1px solid black;
   border-radius: 3%;
-  width: 80%;
-  height: 180px; }
+  width: 100%;
+  height: auto; }
 
 .sector:hover {
   transform: translate(10px, 14px);
@@ -299,43 +301,52 @@ textarea {
   font-family: "Abril Fatface", cursive;
   color: white; }
 
-.pFather {
+.product-father {
   border: none;
-  display: flex;
-  height: auto;
+  padding: 0;
+  margin: 0;
+  height: auto; }
+  .product-father h1 {
+    font-size: 3em;
+    text-align: center; }
+  .product-father h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+
+.box-product {
   width: 100%;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.tHijo {
-  background-color: #0a8cd8;
-  height: 550px; }
-
-.productos {
-  padding: 20px;
   height: auto;
-  width: 90%;
-  border-radius: 3%;
-  border: 3px solid #203a52;
-  background-color: #0a8cd8;
-  display: block; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  margin: 0 auto; }
 
-th {
-  font-family: "Bebas Neue", sans-serif;
-  color: rgba(253, 253, 253, 0.822); }
+.product {
+  display: block;
+  flex-direction: row;
+  margin: 5px;
+  height: 400px;
+  width: 300px;
+  border: solid black 1px;
+  text-align: center; }
+  .product h3 {
+    font-family: "Bebas Neue", sans-serif;
+    color: rgba(0, 0, 0, 0.822);
+    font-size: 20px; }
+  .product p {
+    font-family: "Bebas Neue", sans-serif;
+    color: rgba(0, 0, 0, 0.822);
+    font-size: 40px;
+    margin: 5px; }
 
-td {
-  font-family: "Bebas Neue", sans-serif;
-  color: white; }
-
-li {
-  list-style-type: none;
-  padding: 5%;
-  margin: 0%;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 15px;
-  line-height: 1.5em;
-  color: rgba(148, 141, 50, 0.658); }
+.product-img {
+  height: 200px;
+  width: 250px;
+  padding: 3%;
+  margin: 5px; }
 
 .poCoFather {
   border: none;
@@ -446,7 +457,13 @@ li {
     padding: auto; }
   .sector {
     width: 300px;
-    height: 300px; } }
+    height: 300px; }
+  .sector-img {
+    width: 85%;
+    height: 180px; } }
+
+.product-father {
+  height: auto; }
 
 footer {
   height: 100px;
@@ -498,8 +515,11 @@ footer {
     .sector h2 {
       font-size: 0.75em; }
   .sector-img {
-    width: 100%;
+    width: 85%;
     height: 180px; } }
+
+.product-father {
+  height: auto; }
 
 footer {
   height: 100px;
@@ -558,6 +578,9 @@ footer {
 .sector-img {
   width: 85%;
   height: 180px; }
+
+.product-father {
+  height: auto; }
 
 footer {
   height: 100px;
